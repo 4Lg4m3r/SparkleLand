@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class Survey : MonoBehaviour
 {
+    public InputField inputToClear;
+
     [SerializeField] InputField feedback1;
 
-    string URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf5E1BD-709Mqyb7LxtxBDzndsE-NPZj6mjObD8O1bv6F5RBg/formResponse";
+    string URL = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSf5E1BD-709Mqyb7LxtxBDzndsE-NPZj6mjObD8O1bv6F5RBg/formResponse";
 
     public void Send()
     {
@@ -22,5 +24,11 @@ public class Survey : MonoBehaviour
         UnityWebRequest www = UnityWebRequest.Post(URL, form);
 
         yield return www.SendWebRequest();
+    }
+
+    
+    public void ClearFields()
+    {
+        inputToClear.text = "";
     }
 }
