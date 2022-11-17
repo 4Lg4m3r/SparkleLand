@@ -21,13 +21,17 @@ public class EnemyFollow : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerMovement player = other.transform.GetComponent<PlayerMovement>();
+            Health player = other.transform.GetComponent<Health>();
 
             if (player != null)
             {
-                player.Damage();
-                Destroy(Player.gameObject);
+                player.Damaged();
             }
+
+            else
+            {
+                Destroy(Player.gameObject);
+            }                       
         }
     }
 }

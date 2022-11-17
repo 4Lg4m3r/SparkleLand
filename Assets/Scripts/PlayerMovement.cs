@@ -8,18 +8,6 @@ public class PlayerMovement : MonoBehaviour
 	private float speed = 6.0f;
 	public GameObject character;
 
-	private int _lives = 3;
-
-	public void Damage()
-    {
-		_lives--;
-
-		if (_lives <= 0)
-        {
-			Destroy(this.gameObject);
-        }
-    }
-
 	void Update()
 	{
 
