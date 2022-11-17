@@ -2,17 +2,32 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public Transform Playerpos;
+    public Transform Player;
     UnityEngine.AI.NavMeshAgent agent;
-    // Start is called before the first frame update
+
     void Start()
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
+
+    
     void Update()
     {
 
-        agent.destination = Playerpos.position;
+        agent.destination = Player.position;
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerMovement player = other.transform.GetComponent<PlayerMovement>();
 
+            if (player != null)
+            {
+                player.Damage();
+                Destroy(Player.gameObject);
+            }
+        }
     }
 }
