@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: overview.camera
       value: 
       objectReference: {fileID: 302409960}
+    - target: {fileID: 1807461413602009156, guid: dec06b7a15916437297e6e8968a07e4f, type: 3}
+      propertyPath: overview.sensitivity
+      value: 1600
+      objectReference: {fileID: 0}
     - target: {fileID: 1807461413602009159, guid: dec06b7a15916437297e6e8968a07e4f, type: 3}
       propertyPath: m_Name
       value: Hero
@@ -355,7 +359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 320a613adc164514f861f93e402d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 919132148675882803}
 --- !u!1 &895357774
 GameObject:
   m_ObjectHideFlags: 0
