@@ -143,7 +143,7 @@ namespace AFPC {
         /// Ban this character to recover health.
         /// </summary>
         public virtual void BanShieldRecovery () {
-            isShieldRecovery = false;
+            isShieldRecovery = true;
             if (isDebugLog) Debug.Log (ID + ": Ban Shiled Recovery.");
         }
 
