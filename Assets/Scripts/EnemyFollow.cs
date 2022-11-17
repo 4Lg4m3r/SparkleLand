@@ -27,11 +27,7 @@ public class EnemyFollow : MonoBehaviour
             {
                 player.Damaged();
             }
-
-            else
-            {
-                Destroy(Player.gameObject);
-            }                       
+                                   
         }
     }
 }

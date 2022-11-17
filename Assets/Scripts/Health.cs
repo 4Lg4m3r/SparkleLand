@@ -39,7 +39,17 @@ public class Health : MonoBehaviour
             {
                 hearts[i].enabled = false;
             }
+            
         }
+
+
+        if (health <= 0)
+        {
+            Debug.Log("Death");
+            Destroy(gameObject);
+        }
+
+
     }
 
    
@@ -53,11 +63,5 @@ public class Health : MonoBehaviour
         }
 
     }
- public void Dead()
-    {
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
+
 }
