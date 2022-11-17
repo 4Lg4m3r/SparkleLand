@@ -521,6 +521,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1910818375}
     m_Modifications:
+    - target: {fileID: 1993888530858652603, guid: 56de19f1700f88449a1a64113b219a0c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.511
+      objectReference: {fileID: 0}
     - target: {fileID: 6191225787298425476, guid: 56de19f1700f88449a1a64113b219a0c, type: 3}
       propertyPath: m_Name
       value: ShroomTime 1
