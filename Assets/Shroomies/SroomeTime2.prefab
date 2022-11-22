@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7356000816684863243}
   - component: {fileID: 5619157064475608904}
   - component: {fileID: 6935909495340642753}
+  - component: {fileID: 5153234085974064630}
   m_Layer: 0
   m_Name: SroomeTime2
   m_TagString: Untagged
@@ -56,6 +57,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0127591381648e47ad2c2856daea4a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5153234085974064630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804261683119260389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5564ac850d22c40ac568d4690ca74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4513276311831513068

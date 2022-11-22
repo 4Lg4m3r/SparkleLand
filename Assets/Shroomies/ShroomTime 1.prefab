@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8845642669951380063}
   - component: {fileID: 4557215432351418142}
   - component: {fileID: 1376910056670098198}
+  - component: {fileID: 3565666615760532299}
   m_Layer: 0
   m_Name: ShroomTime 1
   m_TagString: Untagged
@@ -58,6 +59,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0127591381648e47ad2c2856daea4a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3565666615760532299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6191225787298425476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5564ac850d22c40ac568d4690ca74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1993888530858256699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79,7 +92,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ce6f7e454178594fa964426a078b449, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.452385
+      value: 7.511
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ce6f7e454178594fa964426a078b449, type: 3}
       propertyPath: m_LocalPosition.z
