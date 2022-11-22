@@ -8,8 +8,12 @@ public class Collectible : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("You ate!!!!!");
-            Destroy(this.gameObject);
+            Player player = other.GetComponent<Player>();
+
+            if(player != null)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }
