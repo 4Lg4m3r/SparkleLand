@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 	private float speed = 6.0f;
 	public GameObject character;
     public GameObject bulletPrefab;
-    public Camera playerCamera;
+    public GameObject playerCamera;
 
     void Update()
 	{
