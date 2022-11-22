@@ -8,7 +8,7 @@ public class Collectible : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("You ate!!!!! Congratz!!!!!");
+            Debug.Log("You ate!!!!!");
             Destroy(this.gameObject);
         }
     }
