@@ -32,5 +32,10 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+
+        if(other.gameObject.TryGetComponent<EnemyFollow>(out EnemyFollow enemyComponent))
+        {
+            enemyComponent.TakeDamage(1);
+        }
     }
 }
