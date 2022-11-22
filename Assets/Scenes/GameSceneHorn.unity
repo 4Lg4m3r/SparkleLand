@@ -303,10 +303,6 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 543450653147002249}
-    - target: {fileID: 1153529384, guid: 62b15210a02da234db9bc89f398d8858, type: 3}
-      propertyPath: m_Direction
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8283776854109312152, guid: 62b15210a02da234db9bc89f398d8858, type: 3}
       propertyPath: m_Name
       value: marsh Variant

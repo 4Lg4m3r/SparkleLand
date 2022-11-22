@@ -117,6 +117,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 5888275541755195579, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
+  health: 0
+  maxHealth: 3
 --- !u!195 &1153529383
 NavMeshAgent:
   m_ObjectHideFlags: 0
