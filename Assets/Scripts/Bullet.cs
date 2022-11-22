@@ -19,14 +19,18 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         // Make the bullet move
-
         transform.position += transform.forward * speed * Time.deltaTime;
+        
         // Check if the bullet should be destroyed
-
         lifeTimer -= Time.deltaTime;
         if (lifeTimer <= 0f)
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
     }
 }

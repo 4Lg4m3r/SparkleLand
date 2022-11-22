@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205051939}
   m_LocalRotation: {x: 0.5735764, y: -0, z: -0, w: 0.8191521}
-  m_LocalPosition: {x: 0, y: -0.0024812066, z: 0.016865762}
+  m_LocalPosition: {x: 0, y: -0.0039, z: 0.0131}
   m_LocalScale: {x: 0.01, y: 0.0100000035, z: 0.0100000035}
   m_Children: []
   m_Father: {fileID: 4552916413721730165}
@@ -87,7 +87,7 @@ PrefabInstance:
       objectReference: {fileID: 205051939}
     - target: {fileID: 6556268835756845569, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
       propertyPath: m_Name
-      value: Hat_UnicornHorn
+      value: Hat_UnicornHorn Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
