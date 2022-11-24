@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyFollow : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class EnemyFollow : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("has damaged player");
             Health player = other.transform.GetComponent<Health>();
 
             if (player != null)

@@ -46,7 +46,9 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log("Death");
-            Destroy(gameObject);
+            // if death = go to game over scene
+            //Destroy(this.gameObject);
+            //if destroy object, it will give you errors
         }
 
 
@@ -57,10 +59,11 @@ public class Health : MonoBehaviour
     public void Damaged()
     {
         health -= 1;
-        if (health < numOfHearts)
+        // this will remove the whole hearts, not just empty them
+        /*if (health < numOfHearts)
         {
             numOfHearts = health;
-        }
+        }*/
 
     }
 
