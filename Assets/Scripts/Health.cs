@@ -46,12 +46,19 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log("Death");
+            pauseGame();
+
             // if death = go to game over scene
             //Destroy(this.gameObject);
             //if destroy object, it will give you errors
         }
 
 
+    }
+
+    public void pauseGame()
+    {
+        Time.timeScale = 0;
     }
 
    
