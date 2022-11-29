@@ -14,6 +14,11 @@ public class EnemyManager : MonoBehaviour
         SpawnNewEnemy();
     }
 
+    void OnEnable()
+    {
+        EnemyController.OnEnemyKilled += SpawnNewEnemy;
+    }
+
     void SpawnNewEnemy()
     {
         int randomNumber = Mathf.RoundToInt(Random.Range(0f, m_SpawnPoints.Length-1));
