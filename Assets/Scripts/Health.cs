@@ -13,6 +13,12 @@ public class Health : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    bool isImmune;
+    public GameObject player;
+    public GameObject enemy;
+    public float immunityTime;
+    public float immunityDuration;
+
     void Update()
     {
         if (health > numOfHearts)
@@ -41,6 +47,21 @@ public class Health : MonoBehaviour
             }
             
         }
+
+        /*if (isImmune == false && enemy.isTouching(player))
+        {
+            Damaged();
+            isImmune = true;
+            immunityTime = 2;
+        }
+        else if (isImmune == true)
+        {
+            immunityTime = immunityTime + Time.deltaTime;
+            if (immunityTime >= immunityDuration)
+            {
+                isImmune = false;
+            }
+        }*/
 
 
         if (health <= 0)
