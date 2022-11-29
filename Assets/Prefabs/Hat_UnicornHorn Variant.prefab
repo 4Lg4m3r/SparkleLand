@@ -37,6 +37,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4754806924962139092, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e17947ebf70ee294eb7b4444458e28bc, type: 2}
     - target: {fileID: 5888275541755195579, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -89,7 +93,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hat_UnicornHorn Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7356771816028733214, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2553977599916981721, guid: 3bd8e04cb8fa06d45ae2c8871c47ab4a, type: 3}
+    m_RemovedComponents:
+    - {fileID: 6214371640870586216, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
 --- !u!4 &4552916413721730165 stripped
 Transform:

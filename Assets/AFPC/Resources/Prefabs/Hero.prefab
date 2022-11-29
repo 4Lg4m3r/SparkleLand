@@ -60,7 +60,6 @@ MonoBehaviour:
     runningAcceleration: 10
     referenceEndurance: 20
     jumpForce: 7.5
-    groungCheckPosition: {x: 0, y: 0, z: 0}
     isGeneratePhysicMaterial: 1
     mass: 70
     drag: 3
