@@ -6,14 +6,13 @@ public class Collectible : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
+
+        Debug.Log("moro");
         if (other.tag == "Player")
         {
-            Player player = other.GetComponent<Player>();
-
-            if(player != null)
-            {
+           
                 Destroy(this.gameObject);
-            }
+ 
         }
     }
 }

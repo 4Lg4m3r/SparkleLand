@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807461413602009159, guid: dec06b7a15916437297e6e8968a07e4f, type: 3}
       propertyPath: m_Name
-      value: Hero
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1807461413602009159, guid: dec06b7a15916437297e6e8968a07e4f, type: 3}
       propertyPath: m_TagString
@@ -603,6 +603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1910818375}
+  - component: {fileID: 1910818376}
   m_Layer: 0
   m_Name: All the shroomies
   m_TagString: Untagged
@@ -626,6 +627,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1910818376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910818374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5564ac850d22c40ac568d4690ca74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1994573965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6191225787298425476, guid: 56de19f1700f88449a1a64113b219a0c, type: 3}
