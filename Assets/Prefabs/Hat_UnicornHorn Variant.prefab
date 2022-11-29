@@ -85,9 +85,17 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 205051939}
+    - target: {fileID: 6214371641371258324, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6556268835756845569, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
       propertyPath: m_Name
       value: Hat_UnicornHorn Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556268835756845569, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d3752393d90bc42bcbab2959be1f6e, type: 3}
