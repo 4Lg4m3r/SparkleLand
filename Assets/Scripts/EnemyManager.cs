@@ -14,10 +14,10 @@ public class EnemyManager : MonoBehaviour
         SpawnNewEnemy();
     }
 
-    void OnEnable()
-    {
-        EnemyController.OnEnemyKilled += SpawnNewEnemy;
-    }
+    //void OnEnable()
+    //{
+      //  EnemyController.OnEnemyKilled += SpawnNewEnemy;
+    //}
 
     void SpawnNewEnemy()
     {
