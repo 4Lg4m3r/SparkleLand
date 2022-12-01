@@ -116,7 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dbdfd415fe2d6b4abfd0df4a7c825e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 4552916413721730165, guid: c447d4fe9e9c8014fba25db8549587b0, type: 3}
+  speed: 3
+  minDist: 1
+  target: {fileID: 0}
   health: 0
   maxHealth: 3
 --- !u!195 &1153529383
