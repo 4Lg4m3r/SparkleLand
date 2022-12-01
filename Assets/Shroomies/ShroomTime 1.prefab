@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8845642669951380063}
   - component: {fileID: 4557215432351418142}
-  - component: {fileID: 1376910056670098198}
+  - component: {fileID: 5687136753619564671}
   m_Layer: 0
   m_Name: ShroomTime 1
-  m_TagString: Untagged
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,9 +44,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1376910056670098198
+  m_Size: {x: 0.5, y: 0.5751848, z: 0.5}
+  m_Center: {x: 12.86408, y: 7.7234073, z: 10.40218}
+--- !u!114 &5687136753619564671
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6191225787298425476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0127591381648e47ad2c2856daea4a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 0869a9274c7c6ff4c826aa9428a95046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1993888530858256699
@@ -79,7 +79,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ce6f7e454178594fa964426a078b449, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.452385
+      value: 7.511
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ce6f7e454178594fa964426a078b449, type: 3}
       propertyPath: m_LocalPosition.z

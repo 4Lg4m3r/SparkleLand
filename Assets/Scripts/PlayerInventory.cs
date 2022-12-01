@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public int NumberOfShrooms { get; private set; }
-
-    public void ShroomsCollected()
+    private void OnCollisionEnter(Collision collision)
     {
-        NumberOfShrooms++;
+        Destroy(collision.gameObject);
     }
 }
