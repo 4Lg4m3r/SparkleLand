@@ -11,6 +11,12 @@ public class PlayerMovement2 : MonoBehaviour
 
     public float groundDrag;
 
+    // jump floats
+    public float jumpForce;
+    public float jumpCooldown;
+    public float airMultiplier;
+    bool readyToJump;
+
     // 'ground check'
     private float playerHeight = 2;
     public LayerMask ground;
@@ -31,6 +37,8 @@ public class PlayerMovement2 : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         // jäädytetään rigidbody koska se kaatuu muute :D
         rb.freezeRotation = true;
+
+        readyToJump = true;
     }
 
     private void Update()
@@ -61,6 +69,18 @@ public class PlayerMovement2 : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
+
+        // milloin hypätä:
+        // jos painat space, on valmis hyppäämään ja on maassa
+        if (Input.GetKey("space") && readyToJump && grounded)
+        {
+            readyToJump = false;
+
+            Jump();
+
+            // pystyt jatkuvasti hyppimään painamalla space pohjaan
+            Invoke(nameof(ResetJump), jumpCooldown);
+        }
     }
 
     // itse movement
@@ -82,17 +102,16 @@ public class PlayerMovement2 : MonoBehaviour
 
     }
 
-    // turha aka ei käytössä atm :D
-    // rajoittaa pelaajan nopeutta
-    private void SpeedContol()
+    private void Jump()
     {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        // resettaa y:n velocityn, jotta pelaaja hyppää aina saman korkeuden verran
+        //eiteemitään:D rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-        // rajoittaa velocity:a jos tarpeen
-        if (flatVel.magnitude > speed)
-        {
-            Vector3 limitedVel = flatVel.normalized * speed;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
-        }
+        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+    }
+
+    private void ResetJump()
+    {
+        readyToJump = true;
     }
 }

@@ -28,7 +28,7 @@ public class PlayerCamera : MonoBehaviour
         yRotation += mouseX;
         xRotation -= mouseY;
         // ei voi katsoa ylemm‰s tai alemmas kuin 90 astetta
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        xRotation = Mathf.Clamp(xRotation, -50f, 50f);
 
         // k‰‰nt‰‰ kameraa ja suuntaa
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
