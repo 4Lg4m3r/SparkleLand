@@ -17,6 +17,10 @@ public class PlayerMovement2 : MonoBehaviour
     public float airMultiplier;
     bool readyToJump;
 
+    //Ampuminen
+    public GameObject bulletPrefab;
+    public GameObject playerCamera;
+
     // 'ground check'
     private float playerHeight = 2;
     public LayerMask ground;
@@ -57,6 +61,13 @@ public class PlayerMovement2 : MonoBehaviour
         else
         {
             rb.drag = 0;
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject bulletObject = Instantiate(bulletPrefab);
+            bulletObject.transform.position = playerCamera.transform.position + playerCamera.transform.forward;
+            bulletObject.transform.forward = playerCamera.transform.forward;
         }
     }
 

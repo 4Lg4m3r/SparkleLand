@@ -752,6 +752,8 @@ MonoBehaviour:
   jumpForce: 0
   jumpCooldown: 0
   airMultiplier: 0
+  bulletPrefab: {fileID: 43519452576479834, guid: 0df570021a0d944488b885c14455b392, type: 3}
+  playerCamera: {fileID: 1441314290}
   ground:
     serializedVersion: 2
     m_Bits: 1024
