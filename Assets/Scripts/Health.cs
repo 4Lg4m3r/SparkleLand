@@ -13,6 +13,10 @@ public class Health : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    public Image heart;
+    public Image heart1;
+    public Image heart2;
+
     void Update()
     {
         if (health > numOfHearts)
@@ -61,7 +65,21 @@ public class Health : MonoBehaviour
         {
             numOfHearts = health;
         }
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+            Destroy(heart2);
+        }
 
+        if (health == 2)
+        {
+            Destroy(heart);
+        }
+
+        if (health == 1)
+        {
+            Destroy(heart1.gameObject);
+        }
     }
 
 }
