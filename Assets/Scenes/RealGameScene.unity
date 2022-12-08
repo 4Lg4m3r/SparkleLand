@@ -914,6 +914,7 @@ GameObject:
   - component: {fileID: 1260607229}
   - component: {fileID: 1260607228}
   - component: {fileID: 1260607227}
+  - component: {fileID: 1260607233}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1039,6 +1040,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260607233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260607226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e9313c2391c17841aff946d4f959440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  numOfHearts: 3
+  hearts: []
+  fullHeart: {fileID: 0}
+  emptyHeart: {fileID: 0}
 --- !u!1 &1272279666
 GameObject:
   m_ObjectHideFlags: 0
