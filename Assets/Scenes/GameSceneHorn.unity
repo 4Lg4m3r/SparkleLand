@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: overview.camera
       value: 
       objectReference: {fileID: 302409960}
+    - target: {fileID: 1807461413602009156, guid: dec06b7a15916437297e6e8968a07e4f, type: 3}
+      propertyPath: overview.sensitivity
+      value: 1600
+      objectReference: {fileID: 0}
     - target: {fileID: 1807461413602009159, guid: dec06b7a15916437297e6e8968a07e4f, type: 3}
       propertyPath: m_Name
       value: Hero
@@ -650,7 +654,7 @@ GameObject:
   - component: {fileID: 1845819104}
   - component: {fileID: 1845819103}
   m_Layer: 5
-  m_Name: ShroomsCollected
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -672,7 +676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -397.38324, y: 418.2887}
+  m_AnchoredPosition: {x: -329, y: 414}
   m_SizeDelta: {x: 395.2336, y: 39.4226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845819103

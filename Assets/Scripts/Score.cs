@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public GameObject ShroomsCollected;
+    public GameObject ScroreText;
     public int theScore;
     
     void OnTriggerEnter(Collider other)
