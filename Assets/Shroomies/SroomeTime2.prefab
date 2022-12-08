@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7356000816684863243}
   - component: {fileID: 5619157064475608904}
-  - component: {fileID: 3908070860074211875}
+  - component: {fileID: 4746728223279911205}
   m_Layer: 0
   m_Name: SroomeTime2
-  m_TagString: Collectible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,8 +45,8 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.59939575, z: 0.5}
-  m_Center: {x: 12.23408, y: 7.652687, z: 10.40218}
---- !u!114 &3908070860074211875
+  m_Center: {x: 12.23408, y: 7.452385, z: 10.40218}
+--- !u!114 &4746728223279911205
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,9 +55,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7804261683119260389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0869a9274c7c6ff4c826aa9428a95046, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a757005d3592454a9afc79088421652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShroomsCollected: {fileID: 0}
+  theScore: 0
 --- !u!1001 &4513276311831513068
 PrefabInstance:
   m_ObjectHideFlags: 0
