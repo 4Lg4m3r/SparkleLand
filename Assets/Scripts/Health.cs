@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
@@ -49,8 +50,9 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
-            Debug.Log("Death");
-            Destroy(gameObject);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene("GameOverScene");
         }
 
 
@@ -61,25 +63,25 @@ public class Health : MonoBehaviour
     public void Damaged()
     {
         health -= 1;
-        if (health < numOfHearts)
-        {
-            numOfHearts = health;
-        }
-        if (health <= 0)
-        {
-            Destroy(this.gameObject);
-            Destroy(heart2);
-        }
+        //if (health < numOfHearts)
+        //{
+        //    numOfHearts = health;
+        //}
+        //if (health <= 0)
+        //{
+        //    Destroy(this.gameObject);
+        //    Destroy(heart2);
+        //}
 
-        if (health == 2)
-        {
-            Destroy(heart);
-        }
+        //if (health == 2)
+        //{
+        //    Destroy(heart);
+        //}
 
-        if (health == 1)
-        {
-            Destroy(heart1.gameObject);
-        }
+        //if (health == 1)
+        //{
+        //    Destroy(heart1.gameObject);
+        //}
     }
 
 }

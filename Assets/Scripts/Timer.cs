@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
@@ -19,7 +20,9 @@ public class Timer : MonoBehaviour
         disvar.text = b.ToString();
         if (cntdnw < 0)
         {
-            //scene vaihdos
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene("VictoryScene");
             Debug.Log("Completed");
         }
     }
