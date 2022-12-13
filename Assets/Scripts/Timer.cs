@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
 
-    float cntdnw = 120.0f;
+    float cntdnw = 100.0f;
     public Text disvar;
 
     void Update()
