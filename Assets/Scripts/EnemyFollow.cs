@@ -9,6 +9,8 @@ public class EnemyFollow : MonoBehaviour
     public float minDist = 1f;
     public Transform target;
 
+    public int killCount = 1;
+
     [SerializeField] float health, maxHealth = 3f;
 
     void Start()
@@ -43,9 +45,11 @@ public class EnemyFollow : MonoBehaviour
 
         if (health < 0)
         {
+            ScoreManager.instance.KillScore(killCount);
             Destroy(gameObject);
         }
     }
+
     
     
     
