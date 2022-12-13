@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    public bool GameIsPaused = false;
 
     public GameObject Canvas;
 
@@ -20,33 +20,29 @@ public class PauseMenu : MonoBehaviour
 
             if (GameIsPaused)
             {
-                //Resume();
-                Canvas.gameObject.SetActive(false);
-                Time.timeScale = 1f;
-                GameIsPaused = false;
-            } 
+                Resume();
+            }
             else
             {
-                //Pause();
-                Canvas.gameObject.SetActive(true);
-                Time.timeScale = 0f;
-                GameIsPaused = true;
+                Pause();
             }
         }
 
     }
 
-    //void Resume ()
-    //{
-    //    Canvas.gameObject.SetActive(false);
-    //    Time.timeScale = 1f;
-    //    GameIsPaused = false;
-    //}
+    public void Resume()
+    {
+        Canvas.gameObject.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
-    //void Pause ()
-    //{
-    //    Canvas.gameObject.SetActive(true);
-    //    Time.timeScale = 0f;
-    //    GameIsPaused = true;
-    //}
+    public void Pause()
+    {
+        Canvas.gameObject.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
 }

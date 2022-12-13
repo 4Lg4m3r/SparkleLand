@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement2 : MonoBehaviour
 {
+    PauseMenu pauseMenu;
+    GameObject Canvas1;
+
     //FindObjectOfType<PauseMenu>().Pause();
 
     // pelaajan nopeus
@@ -38,6 +41,9 @@ public class PlayerMovement2 : MonoBehaviour
 
     private void Start()
     {
+        Canvas1 = GameObject.Find("Canvas1");
+        pauseMenu = Canvas1.gameObject.GetComponent<PauseMenu>();
+
         rb = GetComponent<Rigidbody>();
         // j‰‰dytet‰‰n rigidbody koska se kaatuu muute :D
         rb.freezeRotation = true;
@@ -62,15 +68,18 @@ public class PlayerMovement2 : MonoBehaviour
         {
             rb.drag = 0;
         }
-
-        //FindObjectOfType<PauseMenu>().Update();
-
-        if (Input.GetMouseButtonDown(0))
+        
+        if (pauseMenu.GameIsPaused == false)
         {
-            GameObject bulletObject = Instantiate(bulletPrefab);
-            bulletObject.transform.position = playerCamera.transform.position + playerCamera.transform.forward;
-            bulletObject.transform.forward = playerCamera.transform.forward;
+            if (Input.GetMouseButtonDown(0))
+            {
+                GameObject bulletObject = Instantiate(bulletPrefab);
+                bulletObject.transform.position = playerCamera.transform.position + playerCamera.transform.forward;
+                bulletObject.transform.forward = playerCamera.transform.forward;
+            }
         }
+
+
     }
 
     private void FixedUpdate()
