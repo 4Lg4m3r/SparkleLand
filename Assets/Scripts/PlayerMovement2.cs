@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement2 : MonoBehaviour
 {
-    //public Health hp;
-
     // pelaajan nopeus
     public float speed;
 
