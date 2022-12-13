@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement2 : MonoBehaviour
 {
-    //public Health hp;
+    //FindObjectOfType<PauseMenu>().Pause();
 
     // pelaajan nopeus
     public float speed;
@@ -62,6 +62,8 @@ public class PlayerMovement2 : MonoBehaviour
         {
             rb.drag = 0;
         }
+
+        //FindObjectOfType<PauseMenu>().Update();
 
         if (Input.GetMouseButtonDown(0))
         {

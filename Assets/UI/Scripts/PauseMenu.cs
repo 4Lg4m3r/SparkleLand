@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     //public GameObject pauseMenuUI;
 
 
-    void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -20,27 +20,33 @@ public class PauseMenu : MonoBehaviour
 
             if (GameIsPaused)
             {
-                Resume();
+                //Resume();
+                Canvas.gameObject.SetActive(false);
+                Time.timeScale = 1f;
+                GameIsPaused = false;
             } 
             else
             {
-                Pause();
+                //Pause();
+                Canvas.gameObject.SetActive(true);
+                Time.timeScale = 0f;
+                GameIsPaused = true;
             }
         }
 
     }
 
-    void Resume ()
-    {
-        Canvas.gameObject.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
+    //void Resume ()
+    //{
+    //    Canvas.gameObject.SetActive(false);
+    //    Time.timeScale = 1f;
+    //    GameIsPaused = false;
+    //}
 
-    void Pause ()
-    {
-        Canvas.gameObject.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-    }
+    //void Pause ()
+    //{
+    //    Canvas.gameObject.SetActive(true);
+    //    Time.timeScale = 0f;
+    //    GameIsPaused = true;
+    //}
 }
