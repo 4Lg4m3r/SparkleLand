@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement2 : MonoBehaviour
 {
+    //FindObjectOfType<PauseMenu>().Pause();
+
     // pelaajan nopeus
     public float speed;
 
@@ -60,6 +62,8 @@ public class PlayerMovement2 : MonoBehaviour
         {
             rb.drag = 0;
         }
+
+        //FindObjectOfType<PauseMenu>().Update();
 
         if (Input.GetMouseButtonDown(0))
         {
