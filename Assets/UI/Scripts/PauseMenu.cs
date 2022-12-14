@@ -43,6 +43,6 @@ public class PauseMenu : MonoBehaviour
         Canvas.gameObject.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
